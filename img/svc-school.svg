@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Background -->
+  <rect width="200" height="200" fill="#eaf7ff"/>
+  <!-- Desk -->
+  <rect x="20" y="140" width="160" height="12" rx="6" fill="#c8a87a"/>
+  <rect x="35"  y="152" width="10" height="30" rx="5" fill="#b09060"/>
+  <rect x="155" y="152" width="10" height="30" rx="5" fill="#b09060"/>
+  <!-- Open book -->
+  <path d="M50 140 L50 90 C50 88 52 86 54 86 L98 86 L98 140 Z" fill="#fff" stroke="#bfe3f7" stroke-width="1.5"/>
+  <path d="M150 140 L150 90 C150 88 148 86 146 86 L102 86 L102 140 Z" fill="#fff" stroke="#bfe3f7" stroke-width="1.5"/>
+  <!-- Book spine -->
+  <rect x="97" y="86" width="6" height="54" rx="1" fill="#4a90e2" opacity=".2"/>
+  <!-- Lines on left page -->
+  <line x1="58" y1="100" x2="94" y2="100" stroke="#bfe3f7" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="58" y1="108" x2="94" y2="108" stroke="#bfe3f7" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="58" y1="116" x2="94" y2="116" stroke="#bfe3f7" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="58" y1="124" x2="80" y2="124" stroke="#bfe3f7" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Lines on right page -->
+  <line x1="106" y1="100" x2="142" y2="100" stroke="#bfe3f7" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="106" y1="108" x2="142" y2="108" stroke="#bfe3f7" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="106" y1="116" x2="142" y2="116" stroke="#bfe3f7" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="106" y1="124" x2="128" y2="124" stroke="#bfe3f7" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Pencil -->
+  <rect x="158" y="80" width="8" height="56" rx="4" fill="#ffd966" transform="rotate(-20 162 108)"/>
+  <polygon points="154,130 162,126 158,136" fill="#f5c4a0" transform="rotate(-20 158 131)"/>
+  <polygon points="154,130 162,126 158,133" fill="#573731" transform="rotate(-20 158 131)" opacity=".4"/>
+  <rect x="158" y="80" width="8" height="6" rx="2" fill="#e05a6d" transform="rotate(-20 162 83)"/>
+  <!-- Star above book -->
+  <path d="M100 62 L103 72 L114 72.8 L106 80 L108.6 91 L100 86 L91.4 91 L94 80 L86 72.8 L97 72 Z" fill="#ffd966" stroke="#d4a800" stroke-width=".8"/>
+  <!-- Child studying figure -->
+  <circle cx="40" cy="120" r="14" fill="#f5c4a0"/>
+  <!-- Hair -->
+  <path d="M26 118 Q27 106 40 106 Q53 106 54 118 Z" fill="#573731"/>
+  <!-- Eyes (concentrating) -->
+  <ellipse cx="35" cy="120" rx="2.5" ry="1.8" fill="#573731"/>
+  <ellipse cx="45" cy="120" rx="2.5" ry="1.8" fill="#573731"/>
+  <!-- Mouth (focused smile) -->
+  <path d="M36 126 Q40 129 44 126" stroke="#573731" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Body -->
+  <ellipse cx="40" cy="145" rx="16" ry="14" fill="#4a90e2"/>
+  <!-- Thought bubble (shows learning) -->
+  <circle cx="18" cy="100" r="4"  fill="#fff" opacity=".8"/>
+  <circle cx="12" cy="90"  r="5"  fill="#fff" opacity=".8"/>
+  <circle cx="18" cy="80"  r="8"  fill="#fff" opacity=".8"/>
+  <!-- Mini star in thought -->
+  <path d="M18 77 L19 80 L22 80 L20 82 L20.8 85 L18 83 L15.2 85 L16 82 L14 80 L17 80 Z" fill="#ffd966" opacity=".9"/>
+</svg>

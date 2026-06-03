@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Sky background -->
+  <rect width="200" height="200" fill="#fff8f3"/>
+  <!-- Sun -->
+  <circle cx="160" cy="44" r="28" fill="#ffd966" opacity=".9"/>
+  <circle cx="160" cy="44" r="20" fill="#ffcc00"/>
+  <!-- Sun rays -->
+  <line x1="160" y1="8"   x2="160" y2="18"  stroke="#ffd966" stroke-width="3" stroke-linecap="round"/>
+  <line x1="160" y1="70"  x2="160" y2="80"  stroke="#ffd966" stroke-width="3" stroke-linecap="round"/>
+  <line x1="124" y1="44"  x2="134" y2="44"  stroke="#ffd966" stroke-width="3" stroke-linecap="round"/>
+  <line x1="186" y1="44"  x2="196" y2="44"  stroke="#ffd966" stroke-width="3" stroke-linecap="round"/>
+  <line x1="134" y1="18"  x2="141" y2="25"  stroke="#ffd966" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="179" y1="63"  x2="186" y2="70"  stroke="#ffd966" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="186" y1="18"  x2="179" y2="25"  stroke="#ffd966" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="141" y1="63"  x2="134" y2="70"  stroke="#ffd966" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Ground -->
+  <ellipse cx="100" cy="190" rx="90" ry="16" fill="#c8e89a" opacity=".5"/>
+  <rect x="10" y="178" width="180" height="22" rx="11" fill="#c8e89a" opacity=".4"/>
+  <!-- Big plant/tree - stem -->
+  <path d="M100 175 V90" stroke="#80b045" stroke-width="8" stroke-linecap="round"/>
+  <!-- Big leaf left -->
+  <path d="M100 130 C100 130 66 114 58 88 C76 86 96 108 100 130 Z" fill="#80b045"/>
+  <!-- Big leaf right -->
+  <path d="M100 148 C100 148 136 130 144 102 C126 100 104 124 100 148 Z" fill="#aac886"/>
+  <!-- Small branch left -->
+  <path d="M100 110 C100 110 82 102 78 88 C88 88 98 102 100 110 Z" fill="#aac886" opacity=".8"/>
+  <!-- Flower at top -->
+  <circle cx="100" cy="82" r="14" fill="#ec6d45"/>
+  <circle cx="100" cy="82" r="9"  fill="#ffd966"/>
+  <circle cx="100" cy="82" r="4"  fill="#ec6d45"/>
+  <!-- Petals -->
+  <ellipse cx="100" cy="64" rx="6" ry="10" fill="#ec7e4a" opacity=".8"/>
+  <ellipse cx="100" cy="100" rx="6" ry="10" fill="#ec7e4a" opacity=".8"/>
+  <ellipse cx="82" cy="82" rx="10" ry="6" fill="#ec7e4a" opacity=".8"/>
+  <ellipse cx="118" cy="82" rx="10" ry="6" fill="#ec7e4a" opacity=".8"/>
+  <!-- Child figure left -->
+  <circle cx="46" cy="130" r="16" fill="#f5c4a0"/>
+  <path d="M46 130 Q44 128 42 128 Q40 128 40 130 Q40 132 42 132 Q44 132 46 130 Z" fill="#c97a50" opacity=".4"/>
+  <ellipse cx="46" cy="160" rx="14" ry="20" fill="#ec6d45"/>
+  <!-- Arms up (child reaching for flower) -->
+  <line x1="46" y1="142" x2="30" y2="122" stroke="#f5c4a0" stroke-width="7" stroke-linecap="round"/>
+  <line x1="46" y1="142" x2="62" y2="118" stroke="#f5c4a0" stroke-width="7" stroke-linecap="round"/>
+  <!-- Child eyes -->
+  <circle cx="40" cy="127" r="2" fill="#573731"/>
+  <circle cx="52" cy="127" r="2" fill="#573731"/>
+  <!-- Child smile -->
+  <path d="M41 133 Q46 137 51 133" stroke="#573731" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Hair -->
+  <ellipse cx="46" cy="118" rx="16" ry="10" fill="#573731"/>
+  <!-- Butterfly -->
+  <path d="M148 95 C148 95 138 86 140 80 C145 81 148 88 148 95 Z" fill="#e05a6d" opacity=".7"/>
+  <path d="M148 95 C148 95 158 86 156 80 C151 81 148 88 148 95 Z" fill="#f07a8a" opacity=".7"/>
+  <circle cx="148" cy="95" r="2.5" fill="#573731"/>
+  <!-- Small flowers on ground -->
+  <circle cx="30"  cy="178" r="6" fill="#f07a8a"/>
+  <circle cx="30"  cy="178" r="3" fill="#ffd966"/>
+  <circle cx="170" cy="178" r="6" fill="#7cb8f7"/>
+  <circle cx="170" cy="178" r="3" fill="#fff"/>
+</svg>

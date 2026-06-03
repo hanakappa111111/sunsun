@@ -744,15 +744,17 @@ ul { list-style: none; }
   margin-bottom: 14px;
 }
 .feat-icon {
-  width: 54px; height: 54px;
+  width: 58px; height: 58px;
   border-radius: var(--r-blob);
   background: var(--fb, var(--c-orange-bg));
   display: flex; align-items: center; justify-content: center;
   font-size: 1.6rem;
   flex-shrink: 0;
-  transition: transform .25s;
+  transition: transform .3s cubic-bezier(.34,1.56,.64,1);
+  padding: 8px;
 }
-.feat-item:hover .feat-icon { transform: scale(1.08) rotate(-3deg); }
+.feat-icon img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.feat-item:hover .feat-icon { transform: scale(1.1) rotate(-4deg); }
 .feat-meta { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
 .feat-label-num {
   font-size: .63rem;
@@ -1427,12 +1429,12 @@ ul { list-style: none; }
     <!-- desktop nav — icon + .jp + .en, same pattern as さんようこどもかん -->
     <nav class="header-nav" aria-label="メインナビゲーション">
       <ul>
-        <li><a href="#about"><span class="nav-icon">🌱</span><span class="nav-jp">施設紹介</span><span class="nav-en">About</span></a></li>
-        <li><a href="#features"><span class="nav-icon">⭐</span><span class="nav-jp">特徴</span><span class="nav-en">Features</span></a></li>
-        <li><a href="#services"><span class="nav-icon">📋</span><span class="nav-jp">サービス</span><span class="nav-en">Services</span></a></li>
-        <li><a href="#facility"><span class="nav-icon">🏠</span><span class="nav-jp">施設概要</span><span class="nav-en">Info</span></a></li>
-        <li><a href="#access"><span class="nav-icon">📍</span><span class="nav-jp">アクセス</span><span class="nav-en">Access</span></a></li>
-        <li><a href="#faq"><span class="nav-icon">💬</span><span class="nav-jp">よくある質問</span><span class="nav-en">FAQ</span></a></li>
+        <li><a href="#about"><span class="nav-icon"><img src="img/nav-about.svg"    alt="" width="32" height="32"></span><span class="nav-jp">施設紹介</span><span class="nav-en">About</span></a></li>
+        <li><a href="#features"><span class="nav-icon"><img src="img/nav-features.svg" alt="" width="32" height="32"></span><span class="nav-jp">特徴</span><span class="nav-en">Features</span></a></li>
+        <li><a href="#services"><span class="nav-icon"><img src="img/nav-services.svg" alt="" width="32" height="32"></span><span class="nav-jp">サービス</span><span class="nav-en">Services</span></a></li>
+        <li><a href="#facility"><span class="nav-icon"><img src="img/nav-facility.svg" alt="" width="32" height="32"></span><span class="nav-jp">施設概要</span><span class="nav-en">Info</span></a></li>
+        <li><a href="#access"><span class="nav-icon"><img src="img/nav-access.svg"    alt="" width="32" height="32"></span><span class="nav-jp">アクセス</span><span class="nav-en">Access</span></a></li>
+        <li><a href="#faq"><span class="nav-icon"><img src="img/nav-faq.svg"      alt="" width="32" height="32"></span><span class="nav-jp">よくある質問</span><span class="nav-en">FAQ</span></a></li>
       </ul>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="メニューを開く">
@@ -1594,7 +1596,7 @@ ul { list-style: none; }
         <div class="feat-wm" aria-hidden="true">01</div>
         <div class="feat-body">
           <div class="feat-head">
-            <div class="feat-icon">🏫</div>
+            <div class="feat-icon"><img src="img/feat-01.svg" alt="" width="36" height="36"></div>
             <div class="feat-meta">
               <span class="feat-label-num">FEATURE 01</span>
               <h3 class="feat-title">24時間認可外保育所の併設</h3>
@@ -1610,7 +1612,7 @@ ul { list-style: none; }
         <div class="feat-wm" aria-hidden="true">02</div>
         <div class="feat-body">
           <div class="feat-head">
-            <div class="feat-icon">🚗</div>
+            <div class="feat-icon"><img src="img/feat-02.svg" alt="" width="36" height="36"></div>
             <div class="feat-meta">
               <span class="feat-label-num">FEATURE 02</span>
               <h3 class="feat-title">お迎え不要で利用しやすい環境</h3>
@@ -1626,7 +1628,7 @@ ul { list-style: none; }
         <div class="feat-wm" aria-hidden="true">03</div>
         <div class="feat-body">
           <div class="feat-head">
-            <div class="feat-icon">👥</div>
+            <div class="feat-icon"><img src="img/feat-03.svg" alt="" width="36" height="36"></div>
             <div class="feat-meta">
               <span class="feat-label-num">FEATURE 03</span>
               <h3 class="feat-title">少人数定員10名による丁寧な支援</h3>
@@ -1642,7 +1644,7 @@ ul { list-style: none; }
         <div class="feat-wm" aria-hidden="true">04</div>
         <div class="feat-body">
           <div class="feat-head">
-            <div class="feat-icon">📝</div>
+            <div class="feat-icon"><img src="img/feat-04.svg" alt="" width="36" height="36"></div>
             <div class="feat-meta">
               <span class="feat-label-num">FEATURE 04</span>
               <h3 class="feat-title">一人ひとりに合わせた個別支援</h3>
@@ -1658,7 +1660,7 @@ ul { list-style: none; }
         <div class="feat-wm" aria-hidden="true">05</div>
         <div class="feat-body">
           <div class="feat-head">
-            <div class="feat-icon">💬</div>
+            <div class="feat-icon"><img src="img/feat-05.svg" alt="" width="36" height="36"></div>
             <div class="feat-meta">
               <span class="feat-label-num">FEATURE 05</span>
               <h3 class="feat-title">保護者との密な連携</h3>
@@ -1674,7 +1676,7 @@ ul { list-style: none; }
         <div class="feat-wm" aria-hidden="true">06</div>
         <div class="feat-body">
           <div class="feat-head">
-            <div class="feat-icon">🌟</div>
+            <div class="feat-icon"><img src="img/feat-06.svg" alt="" width="36" height="36"></div>
             <div class="feat-meta">
               <span class="feat-label-num">FEATURE 06</span>
               <h3 class="feat-title">安心できる居場所づくり</h3>
@@ -1707,8 +1709,7 @@ ul { list-style: none; }
       <!-- 児童発達支援 -->
       <div class="svc-block fade-up" style="--svc-bg:#fffbe6">
         <div class="svc-img c-orange" role="img" aria-label="児童発達支援の様子">
-          <span class="big-icon">🌱</span>
-          <span>（写真に差し替え）</span>
+          <img src="img/svc-child.svg" alt="児童発達支援のイラスト" style="width:85%;height:85%;object-fit:contain">
         </div>
         <div class="svc-content">
           <span class="svc-tag t1">対象：未就学児（0〜6歳）</span>
@@ -1731,8 +1732,7 @@ ul { list-style: none; }
       <!-- 放課後等デイサービス -->
       <div class="svc-block reverse fade-up" style="--svc-bg:#eaf7ff">
         <div class="svc-img c-blue" role="img" aria-label="放課後等デイサービスの様子">
-          <span class="big-icon">📚</span>
-          <span>（写真に差し替え）</span>
+          <img src="img/svc-school.svg" alt="放課後等デイサービスのイラスト" style="width:85%;height:85%;object-fit:contain">
         </div>
         <div class="svc-content">
           <span class="svc-tag t2">対象：就学児（6〜18歳）</span>
@@ -1755,8 +1755,7 @@ ul { list-style: none; }
       <!-- 保育所等訪問支援 -->
       <div class="svc-block fade-up" style="--svc-bg:#f0f7ea">
         <div class="svc-img c-green" role="img" aria-label="保育所等訪問支援の様子">
-          <span class="big-icon">🏫</span>
-          <span>（写真に差し替え）</span>
+          <img src="img/svc-visit.svg" alt="保育所等訪問支援のイラスト" style="width:85%;height:85%;object-fit:contain">
         </div>
         <div class="svc-content">
           <span class="svc-tag t3">対象：保育園・幼稚園・学校に在籍するお子さま</span>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Left child (small) -->
+  <circle cx="9" cy="13" r="5.5" fill="#7cb8f7"/>
+  <ellipse cx="9" cy="26" rx="5" ry="7" fill="#7cb8f7"/>
+  <!-- Left smile -->
+  <path d="M6.5 13.5 Q9 16 11.5 13.5" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Left eyes -->
+  <circle cx="7.5" cy="11.5" r=".8" fill="#fff"/>
+  <circle cx="10.5" cy="11.5" r=".8" fill="#fff"/>
+
+  <!-- Middle child (tallest - support staff) -->
+  <circle cx="24" cy="10" r="7" fill="#4a90e2"/>
+  <ellipse cx="24" cy="26" rx="7" ry="9" fill="#4a90e2"/>
+  <!-- Middle smile -->
+  <path d="M21 10.5 Q24 13.5 27 10.5" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/>
+  <!-- Middle eyes -->
+  <circle cx="21.5" cy="8.5" r="1" fill="#fff"/>
+  <circle cx="26.5" cy="8.5" r="1" fill="#fff"/>
+  <!-- Heart badge -->
+  <path d="M24 5.5 C24 5.5 22 3.5 22 2.5 C22 1.6 22.8 1 23.5 1.5 L24 2 L24.5 1.5 C25.2 1 26 1.6 26 2.5 C26 3.5 24 5.5 24 5.5Z" fill="#e05a6d"/>
+
+  <!-- Right child (small) -->
+  <circle cx="39" cy="13" r="5.5" fill="#7cb8f7"/>
+  <ellipse cx="39" cy="26" rx="5" ry="7" fill="#7cb8f7"/>
+  <!-- Right smile -->
+  <path d="M36.5 13.5 Q39 16 41.5 13.5" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+  <!-- Right eyes -->
+  <circle cx="37.5" cy="11.5" r=".8" fill="#fff"/>
+  <circle cx="40.5" cy="11.5" r=".8" fill="#fff"/>
+
+  <!-- Holding hands line -->
+  <line x1="13.5" y1="23" x2="17" y2="23" stroke="#7cb8f7" stroke-width="2" stroke-linecap="round"/>
+  <line x1="31" y1="23" x2="34.5" y2="23" stroke="#7cb8f7" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Ground line -->
+  <rect x="2" y="34" width="44" height="2" rx="1" fill="#b8ddf7" opacity=".4"/>
+</svg>

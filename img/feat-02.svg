@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Car body -->
+  <rect x="4" y="22" width="40" height="14" rx="5" fill="#80b045"/>
+  <!-- Cabin roof -->
+  <path d="M13 22 C13 22 15 12 22 12 L30 12 C36 12 37 22 37 22 Z" fill="#6a9c38"/>
+  <!-- Windshield -->
+  <path d="M17 22 L18 14 L28 14 L30 22 Z" fill="#d6f0ff" opacity=".8"/>
+  <!-- Divider line (front/back window) -->
+  <line x1="24" y1="13" x2="24" y2="22" stroke="#6a9c38" stroke-width="1.2"/>
+  <!-- Wheels -->
+  <circle cx="14" cy="36" r="5.5" fill="#3a6b1c"/>
+  <circle cx="14" cy="36" r="2.5" fill="#fff" opacity=".8"/>
+  <circle cx="34" cy="36" r="5.5" fill="#3a6b1c"/>
+  <circle cx="34" cy="36" r="2.5" fill="#fff" opacity=".8"/>
+  <!-- Headlight -->
+  <rect x="40" y="24" width="3" height="2.5" rx="1" fill="#ffd966"/>
+  <!-- Tail light -->
+  <rect x="5" y="24" width="3" height="2.5" rx="1" fill="#ff9977"/>
+  <!-- Arrow (going forward) -->
+  <path d="M44 20 L48 23 L44 26" stroke="#ffd966" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Door line -->
+  <line x1="24" y1="22" x2="24" y2="34" stroke="#6a9c38" stroke-width="1" opacity=".5"/>
+</svg>

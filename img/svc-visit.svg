@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Sky -->
+  <rect width="200" height="200" fill="#f0f7ea"/>
+  <!-- Ground -->
+  <ellipse cx="100" cy="192" rx="95" ry="14" fill="#c8e89a" opacity=".5"/>
+  <!-- School building -->
+  <rect x="55" y="80" width="90" height="100" rx="4" fill="#aac886"/>
+  <!-- Roof -->
+  <polygon points="100,48 48,82 152,82" fill="#80b045"/>
+  <!-- Roof highlight -->
+  <polygon points="100,52 52,82 148,82" fill="#8aba55" opacity=".3"/>
+  <!-- Flagpole -->
+  <line x1="100" y1="48" x2="100" y2="34" stroke="#80b045" stroke-width="2.5"/>
+  <polygon points="100,34 116,40 100,46" fill="#ec6d45"/>
+  <!-- Door -->
+  <rect x="85" y="140" width="30" height="40" rx="3" fill="#fff7f4" opacity=".85"/>
+  <circle cx="112" cy="162" r="2" fill="#80b045"/>
+  <!-- Windows row 1 -->
+  <rect x="62"  y="92"  width="18" height="14" rx="2" fill="#d6f1ff" opacity=".9"/>
+  <rect x="91"  y="92"  width="18" height="14" rx="2" fill="#d6f1ff" opacity=".9"/>
+  <rect x="120" y="92"  width="18" height="14" rx="2" fill="#d6f1ff" opacity=".9"/>
+  <!-- Windows row 2 -->
+  <rect x="62"  y="116" width="18" height="14" rx="2" fill="#d6f1ff" opacity=".9"/>
+  <rect x="120" y="116" width="18" height="14" rx="2" fill="#d6f1ff" opacity=".9"/>
+  <!-- Cross lines on windows -->
+  <line x1="71"  y1="92"  x2="71"  y2="106" stroke="#aac886" stroke-width="1"/>
+  <line x1="100" y1="92"  x2="100" y2="106" stroke="#aac886" stroke-width="1"/>
+  <line x1="129" y1="92"  x2="129" y2="106" stroke="#aac886" stroke-width="1"/>
+  <!-- Support person walking toward school (left) -->
+  <circle cx="22" cy="120" r="13" fill="#ec7e4a"/>
+  <!-- Hair -->
+  <path d="M9 117 Q10 107 22 107 Q34 107 35 117 Z" fill="#573731"/>
+  <!-- Face -->
+  <circle cx="18" cy="121" r="1.8" fill="#573731"/>
+  <circle cx="26" cy="121" r="1.8" fill="#573731"/>
+  <path d="M17 127 Q22 131 27 127" stroke="#573731" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Body -->
+  <ellipse cx="22" cy="148" rx="14" ry="18" fill="#ec6d45"/>
+  <!-- Briefcase -->
+  <rect x="30" y="138" width="14" height="12" rx="3" fill="#a46305" opacity=".8"/>
+  <rect x="34" y="135" width="6"  height="4"  rx="2" fill="#a46305" opacity=".6"/>
+  <!-- Arrow (walking toward) -->
+  <path d="M36 145 L44 145 L40 141 M44 145 L40 149" stroke="#ffd966" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Child at door of school -->
+  <circle cx="178" cy="158" r="11" fill="#f5c4a0"/>
+  <!-- Hair -->
+  <path d="M167 156 Q168 148 178 148 Q188 148 189 156 Z" fill="#573731"/>
+  <!-- Eyes -->
+  <circle cx="174" cy="159" r="1.5" fill="#573731"/>
+  <circle cx="182" cy="159" r="1.5" fill="#573731"/>
+  <path d="M173 165 Q178 168 183 165" stroke="#573731" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Body -->
+  <ellipse cx="178" cy="178" rx="12" ry="14" fill="#7cb8f7"/>
+  <!-- Backpack -->
+  <rect x="166" y="163" width="10" height="14" rx="3" fill="#4a90e2"/>
+  <!-- Small hearts around -->
+  <path d="M165 105 C165 105 162 102 162 100.5 C162 99.3 163 98.6 164 99.1 L165 99.8 L166 99.1 C167 98.6 168 99.3 168 100.5 C168 102 165 105 165 105 Z" fill="#e05a6d" opacity=".7"/>
+  <path d="M30"  cy="95" fill="none"/>
+  <circle cx="35"  cy="95" r="3"   fill="#ffd966" opacity=".8"/>
+  <circle cx="170" cy="72" r="4"   fill="#ffd966" opacity=".7"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- House body -->
+  <rect x="8" y="22" width="32" height="22" rx="3" fill="#ec6d45"/>
+  <!-- Roof -->
+  <polygon points="24,6 5,24 43,24" fill="#c94e2b"/>
+  <!-- Chimney -->
+  <rect x="31" y="10" width="5" height="10" rx="1.5" fill="#a84230"/>
+  <!-- Smoke puff -->
+  <circle cx="33" cy="8"  r="2.5" fill="#f5c4b2" opacity=".6"/>
+  <circle cx="36" cy="6"  r="2"   fill="#f5c4b2" opacity=".45"/>
+  <circle cx="30" cy="6.5" r="1.8" fill="#f5c4b2" opacity=".45"/>
+  <!-- Door -->
+  <rect x="20" y="30" width="8" height="14" rx="2" fill="#fff7f4"/>
+  <!-- Windows -->
+  <rect x="10" y="26" width="8" height="6" rx="1.5" fill="#fff7f4" opacity=".85"/>
+  <rect x="30" y="26" width="8" height="6" rx="1.5" fill="#fff7f4" opacity=".85"/>
+  <!-- Heart in window left -->
+  <path d="M14 28.5 C14 28.5 12.5 27 12.5 26.3 C12.5 25.7 13 25.3 13.5 25.6 L14 26 L14.5 25.6 C15 25.3 15.5 25.7 15.5 26.3 C15.5 27 14 28.5 14 28.5 Z" fill="#e05a6d" opacity=".7"/>
+  <!-- Stars -->
+  <path d="M4 14 L4.7 16 L7 16 L5.2 17.2 L5.9 19.2 L4 18 L2.1 19.2 L2.8 17.2 L1 16 L3.3 16 Z" fill="#ffd966"/>
+  <circle cx="42" cy="12" r="2.5" fill="#ffd966"/>
+  <circle cx="45" cy="18" r="1.5" fill="#ffd966"/>
+</svg>
