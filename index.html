@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>さんさん｜札幌市の児童発達支援・放課後等デイサービス・保育所等訪問支援</title>
+  <meta name="description" content="さんさんは札幌市にある児童発達支援・放課後等デイサービス・保育所等訪問支援の施設です。定員10名の少人数制で、お子さま一人ひとりに寄り添った丁寧な支援を提供しています。24時間認可外保育所と併設し、保護者の方が利用しやすい環境を整えています。" />
+  <meta name="keywords" content="札幌市 児童発達支援,札幌市 放課後等デイサービス,保育所等訪問支援,児童発達支援 札幌,放課後等デイサービス 札幌,さんさん,株式会社三陽" />
+  <link rel="canonical" href="https://sansan-sapporo.jp/" />
+
+  <!-- OGP -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="さんさん｜札幌市の児童発達支援・放課後等デイサービス" />
+  <meta property="og:description" content="お子さま一人ひとりに寄り添う支援を。定員10名の少人数制で、丁寧な個別支援を提供する札幌市の児童発達支援施設です。" />
+  <meta property="og:url" content="https://sansan-sapporo.jp/" />
+  <meta property="og:image" content="https://sansan-sapporo.jp/assets/ogp.jpg" />
+  <meta property="og:site_name" content="さんさん" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =============================================
+       CSS CUSTOM PROPERTIES (Design Tokens)
+    ============================================= */
+    :root {
+      --color-primary:     #FF8C42;
+      --color-primary-lt:  #FFB072;
+      --color-primary-bg:  #FFF5ED;
+      --color-secondary:   #4AAFB8;
+      --color-secondary-lt:#7FCFD6;
+      --color-secondary-bg:#EAF8FA;
+      --color-accent:      #F9D342;
+      --color-green:       #7CC47B;
+      --color-green-bg:    #EEF7EE;
+      --color-text:        #3D3D3D;
+      --color-text-light:  #6B6B6B;
+      --color-white:       #FFFFFF;
+      --color-bg:          #FAFAF8;
+      --color-border:      #E8E8E8;
+
+      --radius-sm:  8px;
+      --radius-md:  16px;
+      --radius-lg:  24px;
+      --radius-xl:  32px;
+
+      --shadow-sm:  0 2px 8px rgba(0,0,0,.06);
+      --shadow-md:  0 4px 20px rgba(0,0,0,.08);
+      --shadow-lg:  0 8px 40px rgba(0,0,0,.10);
+
+      --font-sans:  'Noto Sans JP', sans-serif;
+      --font-serif: 'Noto Serif JP', serif;
+
+      --container: 1100px;
+      --section-gap: 96px;
+    }
+
+    /* =============================================
+       RESET & BASE
+    ============================================= */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-sans);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* =============================================
+       UTILITIES
+    ============================================= */
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin-inline: auto;
+      padding-inline: 24px;
+    }
+    .section { padding-block: var(--section-gap); }
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--color-primary);
+      background: var(--color-primary-bg);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 700;
+      line-height: 1.4;
+      color: var(--color-text);
+      margin-bottom: 16px;
+    }
+    .section-title span { color: var(--color-primary); }
+    .section-lead {
+      font-size: 1rem;
+      color: var(--color-text-light);
+      max-width: 640px;
+      line-height: 1.9;
+    }
+    .section-header { margin-bottom: 56px; }
+    .section-header.center { text-align: center; }
+    .section-header.center .section-lead { margin-inline: auto; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-size: .95rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: transform .2s, box-shadow .2s, opacity .2s;
+      text-decoration: none;
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .btn-primary { background: var(--color-primary); color: #fff; }
+    .btn-secondary { background: var(--color-white); color: var(--color-primary); border: 2px solid var(--color-primary); }
+    .btn-line { background: #06C755; color: #fff; }
+    .btn-lg { padding: 18px 36px; font-size: 1.05rem; }
+
+    .tag {
+      display: inline-block;
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: var(--color-primary-bg);
+      color: var(--color-primary);
+    }
+
+    /* =============================================
+       HEADER / NAV
+    ============================================= */
+    #site-header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--color-border);
+      transition: box-shadow .3s;
+    }
+    #site-header.scrolled { box-shadow: var(--shadow-sm); }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--color-primary);
+    }
+    .header-logo .logo-icon {
+      width: 40px; height: 40px;
+      background: var(--color-primary);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff;
+      font-size: 1.1rem;
+      font-weight: 900;
+    }
+    .header-logo small {
+      display: block;
+      font-size: .65rem;
+      font-weight: 500;
+      color: var(--color-text-light);
+      letter-spacing: .04em;
+    }
+    .header-nav { display: flex; align-items: center; gap: 28px; }
+    .header-nav a {
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--color-text-light);
+      transition: color .2s;
+    }
+    .header-nav a:hover { color: var(--color-primary); }
+    .header-cta { display: flex; align-items: center; gap: 10px; }
+    .header-tel {
+      font-weight: 700;
+      color: var(--color-primary);
+      font-size: .9rem;
+      display: flex; align-items: center; gap: 5px;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 6px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--color-text);
+      border-radius: 2px;
+      transition: .3s;
+    }
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 68px; left: 0; right: 0; bottom: 0;
+      background: rgba(255,255,255,.98);
+      z-index: 99;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      padding: 32px;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text);
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-border);
+      width: 100%;
+      text-align: center;
+      transition: color .2s;
+    }
+    .mobile-menu a:hover { color: var(--color-primary); }
+
+    /* =============================================
+       HERO
+    ============================================= */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #FFF8F2 0%, #FFF0E6 40%, #EAF8FA 100%);
+      padding-top: 68px;
+    }
+    .hero-bg-shapes {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .hero-bg-shapes .shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: .18;
+    }
+    .hero-bg-shapes .s1 {
+      width: 500px; height: 500px;
+      background: var(--color-primary);
+      top: -120px; right: -80px;
+    }
+    .hero-bg-shapes .s2 {
+      width: 300px; height: 300px;
+      background: var(--color-secondary);
+      bottom: -60px; left: 5%;
+    }
+    .hero-bg-shapes .s3 {
+      width: 160px; height: 160px;
+      background: var(--color-accent);
+      top: 40%; right: 35%;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-content { max-width: 560px; }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--color-primary-bg);
+      color: var(--color-primary);
+      font-size: .78rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+      border: 1px solid #FFD4B0;
+    }
+    .hero-badge .dot {
+      width: 7px; height: 7px;
+      background: var(--color-primary);
+      border-radius: 50%;
+      animation: pulse 1.8s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .5; transform: scale(1.3); }
+    }
+    .hero-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.5;
+      color: var(--color-text);
+      margin-bottom: 16px;
+    }
+    .hero-headline em {
+      font-style: normal;
+      color: var(--color-primary);
+    }
+    .hero-sub {
+      font-size: .95rem;
+      color: var(--color-text-light);
+      margin-bottom: 32px;
+      line-height: 1.9;
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 36px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--color-border);
+    }
+    .trust-item {
+      text-align: center;
+    }
+    .trust-item .num {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      line-height: 1;
+    }
+    .trust-item .label {
+      font-size: .72rem;
+      color: var(--color-text-light);
+      margin-top: 2px;
+    }
+    .trust-divider {
+      width: 1px; height: 40px;
+      background: var(--color-border);
+    }
+    .hero-image {
+      position: relative;
+    }
+    .hero-img-wrap {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #FFE0C8, #C8EDF0);
+    }
+    .hero-img-placeholder {
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      color: var(--color-primary);
+      font-size: .9rem;
+      font-weight: 600;
+    }
+    .hero-img-placeholder .icon { font-size: 4rem; }
+    .hero-float-card {
+      position: absolute;
+      background: #fff;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      padding: 12px 16px;
+      font-size: .82rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .hero-float-card.card1 { bottom: -16px; left: -20px; }
+    .hero-float-card.card2 { top: -16px; right: -20px; }
+    .hero-float-card .icon { font-size: 1.4rem; }
+
+    /* =============================================
+       ABOUT
+    ============================================= */
+    #about { background: var(--color-white); }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .about-img-wrap {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      aspect-ratio: 1;
+      background: linear-gradient(135deg, #EAF8FA, #D4F0F3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+      color: var(--color-secondary);
+      font-size: .9rem;
+      font-weight: 600;
+    }
+    .about-img-wrap .icon { font-size: 5rem; }
+    .about-points {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .about-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+      background: var(--color-bg);
+      border-radius: var(--radius-md);
+      border-left: 4px solid var(--color-primary);
+    }
+    .about-point .icon { font-size: 1.4rem; flex-shrink: 0; }
+    .about-point .text strong { display: block; font-size: .88rem; margin-bottom: 2px; }
+    .about-point .text span { font-size: .8rem; color: var(--color-text-light); }
+    .about-message {
+      margin-top: 32px;
+      padding: 24px;
+      background: var(--color-primary-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid #FFD4B0;
+    }
+    .about-message p {
+      font-size: .95rem;
+      line-height: 2;
+      color: var(--color-text);
+    }
+
+    /* =============================================
+       FEATURES
+    ============================================= */
+    #features { background: var(--color-bg); }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .feature-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      box-shadow: var(--shadow-sm);
+      transition: transform .25s, box-shadow .25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--card-color, var(--color-primary));
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .feature-icon {
+      width: 56px; height: 56px;
+      border-radius: var(--radius-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      background: var(--icon-bg, var(--color-primary-bg));
+    }
+    .feature-num {
+      font-size: .7rem;
+      font-weight: 700;
+      color: var(--color-text-light);
+      letter-spacing: .08em;
+      margin-bottom: 8px;
+    }
+    .feature-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .feature-desc {
+      font-size: .83rem;
+      color: var(--color-text-light);
+      line-height: 1.8;
+    }
+
+    /* =============================================
+       SERVICES
+    ============================================= */
+    #services { background: var(--color-white); }
+    .services-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .service-block {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 40px;
+      align-items: start;
+      background: var(--color-bg);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .service-block:nth-child(2) { direction: rtl; }
+    .service-block:nth-child(2) > * { direction: ltr; }
+    .service-img {
+      aspect-ratio: 3/4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: .85rem;
+      font-weight: 600;
+    }
+    .service-img .icon { font-size: 4rem; }
+    .service-img.s1 { background: linear-gradient(160deg, #FFE0C8, #FFCBA4); color: var(--color-primary); }
+    .service-img.s2 { background: linear-gradient(160deg, #C8EDF0, #A4DEE4); color: var(--color-secondary); }
+    .service-img.s3 { background: linear-gradient(160deg, #D4EFC4, #B8E0A0); color: var(--color-green); }
+    .service-content { padding: 40px 40px 40px 0; }
+    .service-block:nth-child(2) .service-content { padding: 40px 0 40px 40px; }
+    .service-tag {
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+    .service-tag.t1 { background: var(--color-primary-bg); color: var(--color-primary); }
+    .service-tag.t2 { background: var(--color-secondary-bg); color: var(--color-secondary); }
+    .service-tag.t3 { background: var(--color-green-bg); color: var(--color-green); }
+    .service-title {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .service-desc {
+      font-size: .9rem;
+      color: var(--color-text-light);
+      line-height: 2;
+      margin-bottom: 20px;
+    }
+    .service-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .service-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: .85rem;
+    }
+    .service-list li::before {
+      content: '✓';
+      color: var(--color-primary);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .service-target {
+      margin-top: 20px;
+      padding: 14px 16px;
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      font-size: .82rem;
+      border: 1px solid var(--color-border);
+    }
+    .service-target strong { color: var(--color-primary); }
+
+    /* =============================================
+       FACILITY INFO
+    ============================================= */
+    #facility { background: var(--color-primary-bg); }
+    .facility-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .info-table {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+    }
+    .info-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .info-table tr { border-bottom: 1px solid var(--color-border); }
+    .info-table tr:last-child { border-bottom: none; }
+    .info-table th {
+      padding: 16px 20px;
+      text-align: left;
+      font-size: .82rem;
+      font-weight: 700;
+      color: var(--color-text-light);
+      background: var(--color-bg);
+      width: 120px;
+      vertical-align: top;
+    }
+    .info-table td {
+      padding: 16px 20px;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+    .info-table td a {
+      color: var(--color-primary);
+      text-decoration: underline;
+    }
+    .facility-cta {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .cta-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+    }
+    .cta-card .icon { font-size: 2.4rem; margin-bottom: 8px; }
+    .cta-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .cta-card p { font-size: .82rem; color: var(--color-text-light); margin-bottom: 16px; }
+    .cta-tel-num {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    /* =============================================
+       ACCESS
+    ============================================= */
+    #access { background: var(--color-white); }
+    .access-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+    .map-wrap {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      aspect-ratio: 4/3;
+      background: #E8E8E8;
+    }
+    .map-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+    .access-info { display: flex; flex-direction: column; gap: 20px; }
+    .access-card {
+      background: var(--color-bg);
+      border-radius: var(--radius-md);
+      padding: 20px;
+    }
+    .access-card h3 {
+      font-size: .88rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .access-card p { font-size: .88rem; color: var(--color-text-light); line-height: 1.8; }
+
+    /* =============================================
+       CONTACT
+    ============================================= */
+    #contact {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-lt) 100%);
+      color: #fff;
+    }
+    #contact .section-label { background: rgba(255,255,255,.2); color: #fff; }
+    #contact .section-title { color: #fff; }
+    #contact .section-title span { color: var(--color-accent); }
+    #contact .section-lead { color: rgba(255,255,255,.85); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+    }
+    .contact-card {
+      background: rgba(255,255,255,.15);
+      border: 1px solid rgba(255,255,255,.3);
+      border-radius: var(--radius-xl);
+      padding: 36px 24px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      transition: background .2s;
+    }
+    .contact-card:hover { background: rgba(255,255,255,.22); }
+    .contact-card .icon { font-size: 2.8rem; margin-bottom: 12px; }
+    .contact-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; }
+    .contact-card p { font-size: .82rem; opacity: .85; margin-bottom: 20px; line-height: 1.7; }
+    .contact-tel {
+      font-family: var(--font-serif);
+      font-size: 1.9rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .contact-tel small { font-size: 1rem; font-weight: 400; }
+    .line-qr {
+      width: 120px; height: 120px;
+      background: #fff;
+      border-radius: var(--radius-md);
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 4px;
+      color: #888;
+      font-size: .72rem;
+      font-weight: 600;
+      padding: 12px;
+    }
+    .line-qr .qr-icon { font-size: 2.4rem; color: #06C755; }
+
+    /* =============================================
+       PARTNER
+    ============================================= */
+    #partner { background: var(--color-secondary-bg); }
+    .partner-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .partner-img {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      background: linear-gradient(135deg, #C8EDF0, #A4DEE4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--color-secondary);
+      font-size: .9rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-md);
+    }
+    .partner-img .icon { font-size: 5rem; }
+    .partner-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--color-secondary-bg);
+      color: var(--color-secondary);
+      font-size: .75rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      border: 1px solid #B0E0E6;
+    }
+    .partner-desc {
+      font-size: .92rem;
+      color: var(--color-text-light);
+      line-height: 2;
+      margin-bottom: 28px;
+    }
+    .partner-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: var(--color-secondary);
+      color: #fff;
+      border-radius: 999px;
+      font-size: .9rem;
+      font-weight: 700;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .partner-link:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+
+    /* =============================================
+       FAQ
+    ============================================= */
+    #faq { background: var(--color-white); }
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--color-bg);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      transition: box-shadow .2s;
+    }
+    .faq-item.open { box-shadow: var(--shadow-sm); border-color: #FFD4B0; }
+    .faq-q {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 20px 24px;
+      cursor: pointer;
+      font-size: .93rem;
+      font-weight: 700;
+      user-select: none;
+      transition: background .2s;
+    }
+    .faq-q:hover { background: var(--color-primary-bg); }
+    .faq-q .q-badge {
+      flex-shrink: 0;
+      width: 28px; height: 28px;
+      background: var(--color-primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .8rem;
+      font-weight: 900;
+    }
+    .faq-q .chevron {
+      margin-left: auto;
+      font-size: 1.1rem;
+      transition: transform .3s;
+      color: var(--color-text-light);
+    }
+    .faq-item.open .chevron { transform: rotate(180deg); }
+    .faq-a {
+      display: none;
+      padding: 0 24px 20px 66px;
+      font-size: .88rem;
+      color: var(--color-text-light);
+      line-height: 1.9;
+    }
+    .faq-item.open .faq-a { display: block; }
+
+    /* =============================================
+       FOOTER
+    ============================================= */
+    #footer {
+      background: var(--color-text);
+      color: rgba(255,255,255,.8);
+      padding: 56px 0 24px;
+    }
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 48px;
+    }
+    .footer-brand .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .footer-brand p { font-size: .82rem; line-height: 1.8; }
+    .footer-col h4 {
+      font-size: .82rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .footer-col ul { display: flex; flex-direction: column; gap: 8px; }
+    .footer-col ul li a {
+      font-size: .82rem;
+      color: rgba(255,255,255,.65);
+      transition: color .2s;
+    }
+    .footer-col ul li a:hover { color: var(--color-primary-lt); }
+    .footer-contact p { font-size: .82rem; margin-bottom: 4px; }
+    .footer-contact a {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--color-primary-lt);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .footer-bottom p { font-size: .78rem; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: .78rem; color: rgba(255,255,255,.55); transition: color .2s; }
+    .footer-links a:hover { color: #fff; }
+
+    /* =============================================
+       FLOATING CTA (MOBILE)
+    ============================================= */
+    .float-cta {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 90;
+      padding: 12px 16px;
+      background: #fff;
+      box-shadow: 0 -4px 20px rgba(0,0,0,.12);
+      gap: 10px;
+    }
+    .float-cta a { flex: 1; text-align: center; font-size: .88rem; }
+
+    /* =============================================
+       SCROLL TO TOP
+    ============================================= */
+    #scroll-top {
+      position: fixed;
+      bottom: 24px; right: 24px;
+      width: 48px; height: 48px;
+      background: var(--color-primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      z-index: 80;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s, transform .2s;
+      border: none;
+      box-shadow: var(--shadow-md);
+    }
+    #scroll-top.visible { opacity: 1; pointer-events: auto; }
+    #scroll-top:hover { transform: translateY(-3px); }
+
+    /* =============================================
+       SECTION ALTERNATING BG
+    ============================================= */
+    .bg-white { background: var(--color-white) !important; }
+    .bg-soft  { background: var(--color-bg) !important; }
+
+    /* =============================================
+       RESPONSIVE
+    ============================================= */
+    @media (max-width: 900px) {
+      :root { --section-gap: 72px; }
+
+      .header-nav, .header-cta { display: none; }
+      .hamburger { display: flex; }
+
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-image { order: -1; }
+      .hero-img-wrap { aspect-ratio: 16/9; }
+      .hero-float-card.card1 { bottom: -8px; left: 8px; }
+      .hero-float-card.card2 { top: -8px; right: 8px; }
+
+      .about-inner { grid-template-columns: 1fr; }
+      .about-img-wrap { aspect-ratio: 16/9; }
+
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+
+      .service-block { grid-template-columns: 1fr; direction: ltr !important; }
+      .service-block:nth-child(2) > * { direction: ltr; }
+      .service-img { aspect-ratio: 16/9; }
+      .service-content { padding: 24px !important; }
+
+      .facility-inner { grid-template-columns: 1fr; }
+      .access-inner { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .partner-inner { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+
+      .float-cta { display: flex; }
+      #scroll-top { bottom: 80px; }
+    }
+
+    @media (max-width: 600px) {
+      :root { --section-gap: 56px; }
+      .features-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .hero-actions .btn { width: 100%; }
+      .hero-trust { flex-wrap: wrap; gap: 12px; }
+    }
+
+    /* =============================================
+       ANIMATIONS
+    ============================================= */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .6s ease, transform .6s ease;
+    }
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-up:nth-child(2) { transition-delay: .1s; }
+    .fade-up:nth-child(3) { transition-delay: .2s; }
+    .fade-up:nth-child(4) { transition-delay: .3s; }
+    .fade-up:nth-child(5) { transition-delay: .4s; }
+    .fade-up:nth-child(6) { transition-delay: .5s; }
+  </style>
+</head>
+
+<body>
+
+<!-- =============================================
+     HEADER
+============================================= -->
+<header id="site-header" role="banner">
+  <div class="container">
+    <div class="header-inner">
+      <a href="#" class="header-logo">
+        <div class="logo-icon" aria-hidden="true">さ</div>
+        <div>
+          さんさん
+          <small>株式会社三陽</small>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="メインナビゲーション">
+        <a href="#about">施設について</a>
+        <a href="#features">特徴</a>
+        <a href="#services">サービス</a>
+        <a href="#facility">施設概要</a>
+        <a href="#access">アクセス</a>
+        <a href="#faq">よくある質問</a>
+      </nav>
+      <div class="header-cta">
+        <span class="header-tel">📞 <a href="tel:0112064833">011-206-4833</a></span>
+        <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:.85rem;">お問い合わせ</a>
+      </div>
+      <button class="hamburger" aria-label="メニューを開く" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- モバイルメニュー -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="モバイルナビゲーション">
+  <a href="#about" class="mobile-nav-link">施設について</a>
+  <a href="#features" class="mobile-nav-link">特徴</a>
+  <a href="#services" class="mobile-nav-link">サービス</a>
+  <a href="#facility" class="mobile-nav-link">施設概要</a>
+  <a href="#access" class="mobile-nav-link">アクセス</a>
+  <a href="#faq" class="mobile-nav-link">よくある質問</a>
+  <a href="#contact" class="mobile-nav-link">お問い合わせ</a>
+</nav>
+
+
+<!-- =============================================
+     HERO
+============================================= -->
+<section id="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg-shapes" aria-hidden="true">
+    <div class="shape s1"></div>
+    <div class="shape s2"></div>
+    <div class="shape s3"></div>
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot" aria-hidden="true"></span>
+          札幌市の児童発達支援施設
+        </div>
+        <h1 class="hero-headline" id="hero-heading">
+          お子さま<em>一人ひとり</em>に<br>寄り添う支援を
+        </h1>
+        <p class="hero-sub">
+          児童発達支援・放課後等デイサービス・保育所等訪問支援<br>
+          定員10名の少人数制で、専門スタッフが丁寧にサポートします。
+        </p>
+        <div class="hero-tags">
+          <span class="tag">🏫 24時間保育所併設</span>
+          <span class="tag">🚗 送迎あり</span>
+          <span class="tag">👶 0歳〜学童</span>
+          <span class="tag">👨‍👩‍👧 少人数定員10名</span>
+        </div>
+        <div class="hero-actions">
+          <a href="tel:0112064833" class="btn btn-primary btn-lg">
+            📞 電話でお問い合わせ
+          </a>
+          <a href="#contact" class="btn btn-line btn-lg">
+            💬 LINEで相談する
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <div class="num">10<span style="font-size:1rem">名</span></div>
+            <div class="label">少人数定員</div>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <div class="num">3</div>
+            <div class="label">対応サービス</div>
+          </div>
+          <div class="trust-divider" aria-hidden="true"></div>
+          <div class="trust-item">
+            <div class="num">8〜20<span style="font-size:.9rem">時</span></div>
+            <div class="label">開所時間</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image" aria-hidden="true">
+        <div class="hero-img-wrap">
+          <div class="hero-img-placeholder">
+            <span class="icon">🌟</span>
+            <span>子どもたちの笑顔あふれる場所<br><small>（画像は後ほど差し替えてください）</small></span>
+          </div>
+        </div>
+        <div class="hero-float-card card1">
+          <span class="icon">😊</span>
+          <span>一人ひとりに寄り添う個別支援</span>
+        </div>
+        <div class="hero-float-card card2">
+          <span class="icon">🏠</span>
+          <span>安心の保育所と一体運営</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     ABOUT
+============================================= -->
+<section id="about" class="section bg-white" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-img-wrap" aria-hidden="true">
+        <span class="icon">🌈</span>
+        <span>（施設の写真に差し替えてください）</span>
+      </div>
+      <div class="about-content">
+        <div class="section-header">
+          <div class="section-label">About Us</div>
+          <h2 class="section-title" id="about-heading">
+            <span>さんさん</span>について
+          </h2>
+        </div>
+        <div class="about-message">
+          <p>
+            「さんさん」は、株式会社三陽が運営する児童発達支援・放課後等デイサービス施設です。<br><br>
+            「さんさんと輝く太陽のように、すべての子どもが自分らしく輝いてほしい」という思いを施設名に込めました。発達に心配のあるお子さまや、生活のなかでちょっとした困りごとを感じているご家族に、専門的な支援と温かい居場所を提供しています。<br><br>
+            定員10名の少人数制で、一人ひとりのペースに合わせた個別支援を大切にしています。また、24時間の認可外保育所と併設しているため、保護者の方が働きながらでも安心して利用いただける環境を整えています。
+          </p>
+        </div>
+        <div class="about-points">
+          <div class="about-point fade-up">
+            <span class="icon">🏡</span>
+            <div class="text">
+              <strong>安全で安心できる居場所</strong>
+              <span>お子さまがのびのびと過ごせる、温かく安全な環境づくりを最優先にしています。</span>
+            </div>
+          </div>
+          <div class="about-point fade-up">
+            <span class="icon">📋</span>
+            <div class="text">
+              <strong>個別支援計画に基づいたサポート</strong>
+              <span>お子さまの特性や目標に合わせた個別支援計画を作成し、継続的に見直しながら成長を支えます。</span>
+            </div>
+          </div>
+          <div class="about-point fade-up">
+            <span class="icon">👨‍👩‍👧</span>
+            <div class="text">
+              <strong>保護者の方との密な連携</strong>
+              <span>日々の連絡帳や定期的な面談を通じて、ご家庭と一緒にお子さまの成長を見守ります。</span>
+            </div>
+          </div>
+          <div class="about-point fade-up">
+            <span class="icon">🌏</span>
+            <div class="text">
+              <strong>地域とつながる支援</strong>
+              <span>保育所等訪問支援を通じて、保育園・幼稚園・学校での生活をサポートし、地域全体でお子さまを育む環境づくりに貢献します。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FEATURES
+============================================= -->
+<section id="features" class="section bg-soft" aria-labelledby="features-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">Features</div>
+      <h2 class="section-title" id="features-heading">
+        <span>さんさん</span>の特徴
+      </h2>
+      <p class="section-lead">
+        保護者の方が安心して預けられるよう、さんさんならではの環境と支援体制を整えています。
+      </p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-up" style="--card-color:#FF8C42;--icon-bg:#FFF0E6">
+        <div class="feature-icon">🏫</div>
+        <div class="feature-num">FEATURE 01</div>
+        <h3 class="feature-title">24時間認可外保育所の併設</h3>
+        <p class="feature-desc">さんようこどもかんと同じ建物内に24時間対応の認可外保育所を併設。早朝・夜間のお仕事をお持ちの保護者の方も、安心してお子さまを預けながら利用できます。</p>
+      </div>
+      <div class="feature-card fade-up" style="--card-color:#4AAFB8;--icon-bg:#EAF8FA">
+        <div class="feature-icon">🚗</div>
+        <div class="feature-num">FEATURE 02</div>
+        <h3 class="feature-title">お迎え不要で利用しやすい環境</h3>
+        <p class="feature-desc">保育所との連携により、お子さまが施設間をスムーズに移動できる仕組みを整備。送迎サービスも対応しており、保護者の方の負担を最小限に抑えます。</p>
+      </div>
+      <div class="feature-card fade-up" style="--card-color:#7CC47B;--icon-bg:#EEF7EE">
+        <div class="feature-icon">👥</div>
+        <div class="feature-num">FEATURE 03</div>
+        <h3 class="feature-title">少人数定員10名による丁寧な支援</h3>
+        <p class="feature-desc">定員をあえて10名に限定することで、一人ひとりのお子さまと向き合う時間を十分に確保。専門スタッフがきめ細かくサポートします。</p>
+      </div>
+      <div class="feature-card fade-up" style="--card-color:#F9D342;--icon-bg:#FEFBE6">
+        <div class="feature-icon">📝</div>
+        <div class="feature-num">FEATURE 04</div>
+        <h3 class="feature-title">一人ひとりに合わせた個別支援</h3>
+        <p class="feature-desc">お子さまの発達段階や特性、ご家族のご希望をもとに個別支援計画を作成。定期的に評価・見直しを行いながら、最適な支援を継続します。</p>
+      </div>
+      <div class="feature-card fade-up" style="--card-color:#FF8C42;--icon-bg:#FFF0E6">
+        <div class="feature-icon">💬</div>
+        <div class="feature-num">FEATURE 05</div>
+        <h3 class="feature-title">保護者との密な連携</h3>
+        <p class="feature-desc">毎日の連絡帳や送迎時のコミュニケーションを大切にしています。定期的な個別面談も実施し、ご家庭での様子と施設での様子を共有しながら支援を進めます。</p>
+      </div>
+      <div class="feature-card fade-up" style="--card-color:#4AAFB8;--icon-bg:#EAF8FA">
+        <div class="feature-icon">🌟</div>
+        <div class="feature-num">FEATURE 06</div>
+        <h3 class="feature-title">安心できる居場所づくり</h3>
+        <p class="feature-desc">お子さまが「ここにいてよかった」と思えるような、温かくリラックスできる空間を大切にしています。楽しみながら成長できる活動プログラムを提供しています。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     SERVICES
+============================================= -->
+<section id="services" class="section bg-white" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">Services</div>
+      <h2 class="section-title" id="services-heading">サービス内容</h2>
+      <p class="section-lead">
+        お子さまの成長段階やニーズに合わせた3つのサービスを提供しています。
+      </p>
+    </div>
+    <div class="services-list">
+
+      <!-- 児童発達支援 -->
+      <div class="service-block">
+        <div class="service-img s1" aria-hidden="true">
+          <span class="icon">🌱</span>
+          <span>（写真に差し替え）</span>
+        </div>
+        <div class="service-content">
+          <span class="service-tag t1">対象：未就学児（0〜6歳）</span>
+          <h3 class="service-title">児童発達支援</h3>
+          <p class="service-desc">
+            発達に不安や遅れのある未就学のお子さまを対象に、日常生活に必要な基本的なスキルや社会性を育むための支援を行います。遊びや活動を通じて、お子さまが自信を持って成長できるよう丁寧にサポートします。<br><br>
+            言葉の発達、身辺自立、コミュニケーション力、感覚統合など、それぞれのお子さまの課題に合わせた個別プログラムを提供しています。専門の支援員が保護者の方と連携しながら、お子さまの「できた！」を一緒に積み重ねていきます。
+          </p>
+          <ul class="service-list">
+            <li>個別・グループ活動による発達支援</li>
+            <li>言語・コミュニケーション支援</li>
+            <li>感覚統合・身体機能の向上</li>
+            <li>日常生活スキル（食事・排泄・着脱）のサポート</li>
+            <li>保護者へのペアレントトレーニング・相談対応</li>
+          </ul>
+          <div class="service-target">
+            <strong>受給者証について：</strong>児童発達支援の利用には市区町村発行の「受給者証」が必要です。申請方法についてもお気軽にご相談ください。
+          </div>
+        </div>
+      </div>
+
+      <!-- 放課後等デイサービス -->
+      <div class="service-block">
+        <div class="service-img s2" aria-hidden="true">
+          <span class="icon">📚</span>
+          <span>（写真に差し替え）</span>
+        </div>
+        <div class="service-content">
+          <span class="service-tag t2">対象：就学児（6〜18歳）</span>
+          <h3 class="service-title">放課後等デイサービス</h3>
+          <p class="service-desc">
+            学校の授業終了後や長期休暇中に、障害のある就学児・生徒を対象として、生活能力の向上と社会性の育成を支援するサービスです。学校と家庭の中間的な「第三の居場所」として、お子さまがのびのびと過ごせる環境を提供します。<br><br>
+            宿題サポートや余暇活動、社会生活に必要なスキルトレーニングなど、放課後の時間を充実させるプログラムを用意。友だちとの関わりや集団生活を通じて、社会への参加能力を高めます。
+          </p>
+          <ul class="service-list">
+            <li>学習支援・宿題サポート</li>
+            <li>社会生活スキルトレーニング（SST）</li>
+            <li>余暇活動・創作活動・運動プログラム</li>
+            <li>長期休暇中の日中活動サポート</li>
+            <li>進路・移行期に関する保護者相談</li>
+          </ul>
+          <div class="service-target">
+            <strong>開所時間：</strong>放課後（学校終了後）〜20:00 / 長期休暇中は8:00〜20:00
+          </div>
+        </div>
+      </div>
+
+      <!-- 保育所等訪問支援 -->
+      <div class="service-block">
+        <div class="service-img s3" aria-hidden="true">
+          <span class="icon">🏫</span>
+          <span>（写真に差し替え）</span>
+        </div>
+        <div class="service-content">
+          <span class="service-tag t3">対象：保育園・幼稚園・学校に在籍するお子さま</span>
+          <h3 class="service-title">保育所等訪問支援</h3>
+          <p class="service-desc">
+            保育園・幼稚園・小学校などにお子さまが通っている場合、その施設に専門の支援員が直接訪問し、集団生活への適応をサポートするサービスです。お子さまの環境に合わせた支援を提供することで、より自然な形での社会参加を促します。<br><br>
+            支援員が実際の生活・学習場面を観察し、保育士・教員と連携しながら具体的な支援方法を提案。施設内での困りごとを減らし、お子さまが安心して園・学校生活を送れるよう一緒に考えます。
+          </p>
+          <ul class="service-list">
+            <li>訪問先での集団生活・学習場面のサポート</li>
+            <li>保育士・教員との連携と支援方法の共有</li>
+            <li>環境調整の提案・アドバイス</li>
+            <li>友だち関係・コミュニケーション支援</li>
+            <li>定期的な評価と支援計画の見直し</li>
+          </ul>
+          <div class="service-target">
+            <strong>訪問頻度：</strong>お子さまの状況や施設のご都合に合わせて調整します。まずはご相談ください。
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FACILITY INFO
+============================================= -->
+<section id="facility" class="section" aria-labelledby="facility-heading">
+  <div class="container">
+    <div class="facility-inner">
+      <div>
+        <div class="section-header">
+          <div class="section-label">Facility Info</div>
+          <h2 class="section-title" id="facility-heading">施設概要</h2>
+        </div>
+        <div class="info-table">
+          <table>
+            <tr>
+              <th scope="row">施設名</th>
+              <td>さんさん</td>
+            </tr>
+            <tr>
+              <th scope="row">運営会社</th>
+              <td>株式会社三陽</td>
+            </tr>
+            <tr>
+              <th scope="row">サービス</th>
+              <td>
+                児童発達支援<br>
+                放課後等デイサービス<br>
+                保育所等訪問支援
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">対象年齢</th>
+              <td>0歳〜学童</td>
+            </tr>
+            <tr>
+              <th scope="row">定員</th>
+              <td>10名</td>
+            </tr>
+            <tr>
+              <th scope="row">開所時間</th>
+              <td>8:00〜20:00</td>
+            </tr>
+            <tr>
+              <th scope="row">定休日</th>
+              <td>日曜日・祝日</td>
+            </tr>
+            <tr>
+              <th scope="row">送迎</th>
+              <td>あり（詳細はお問い合わせください）</td>
+            </tr>
+            <tr>
+              <th scope="row">電話</th>
+              <td><a href="tel:0112064833">011-206-4833</a></td>
+            </tr>
+            <tr>
+              <th scope="row">メール</th>
+              <td><a href="mailto:kksanyo.sansan@gmail.com">kksanyo.sansan@gmail.com</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="facility-cta">
+        <div class="cta-card">
+          <div class="icon">📞</div>
+          <h3>お電話でのお問い合わせ</h3>
+          <p>月〜土 8:00〜20:00<br>お気軽にお電話ください</p>
+          <a href="tel:0112064833" class="cta-tel-num">011-206-4833</a>
+          <a href="tel:0112064833" class="btn btn-primary" style="width:100%">今すぐ電話する</a>
+        </div>
+        <div class="cta-card">
+          <div class="icon">✉️</div>
+          <h3>メールでのお問い合わせ</h3>
+          <p>24時間受付中<br>2営業日以内にご返信します</p>
+          <a href="mailto:kksanyo.sansan@gmail.com" class="btn btn-secondary" style="width:100%;margin-top:8px">メールを送る</a>
+        </div>
+        <div class="cta-card" style="background:var(--color-primary-bg)">
+          <div class="icon">🌟</div>
+          <h3>見学随時受付中</h3>
+          <p>施設の雰囲気をぜひ直接ご確認ください。見学は無料で、スタッフが丁寧にご説明します。</p>
+          <a href="tel:0112064833" class="btn btn-primary" style="width:100%">見学を申し込む</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     ACCESS
+============================================= -->
+<section id="access" class="section bg-white" aria-labelledby="access-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">Access</div>
+      <h2 class="section-title" id="access-heading">アクセス</h2>
+    </div>
+    <div class="access-inner">
+      <div class="map-wrap">
+        <!--
+          ▼ Google マップ埋め込みコード（さんようこどもかんの住所に合わせて差し替えてください）
+          例: <iframe src="https://www.google.com/maps/embed?pb=..." ...></iframe>
+        -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2912.123456789!2d141.3468!3d43.0621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z44CF44KT44KI44GT44I_44Gp44GL44KT!5e0!3m2!1sja!2sjp!4v1234567890"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="さんさん アクセスマップ"
+          aria-label="さんさんへのアクセスマップ（Googleマップ）"
+        ></iframe>
+      </div>
+      <div class="access-info">
+        <div class="access-card">
+          <h3>📍 住所</h3>
+          <p>
+            〒（郵便番号をご記入ください）<br>
+            北海道札幌市（番地をご記入ください）<br>
+            ※さんようこどもかんと同一建物内
+          </p>
+        </div>
+        <div class="access-card">
+          <h3>🚌 公共交通機関でお越しの方</h3>
+          <p>
+            ・地下鉄〇〇駅から徒歩〇分<br>
+            ・バス停「〇〇」から徒歩〇分<br>
+            ※詳細はお問い合わせください
+          </p>
+        </div>
+        <div class="access-card">
+          <h3>🚗 お車でお越しの方</h3>
+          <p>
+            駐車場：〇台（無料）<br>
+            ※満車の場合は近隣のコインパーキングをご利用ください<br>
+            ※駐車場の詳細は確認後に更新します
+          </p>
+        </div>
+        <div class="access-card" style="background:var(--color-primary-bg);border:1px solid #FFD4B0">
+          <h3>📞 迷われた場合はお電話を</h3>
+          <p>
+            お気軽にお電話ください。スタッフがご案内します。<br>
+            <a href="tel:0112064833" style="color:var(--color-primary);font-weight:700;font-size:1.1rem">011-206-4833</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     CONTACT
+============================================= -->
+<section id="contact" class="section" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title" id="contact-heading">
+        まずは<span>お気軽に</span>ご相談ください
+      </h2>
+      <p class="section-lead">
+        「うちの子は対象になる？」「どんなことをするの？」など、どんな些細なことでもお気軽にお問い合わせください。相談・見学は無料です。
+      </p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="icon">📞</div>
+        <h3>お電話</h3>
+        <p>スタッフが直接ご対応します。<br>月〜土 8:00〜20:00 受付</p>
+        <a href="tel:0112064833" class="contact-tel">
+          011-206-4833
+        </a>
+        <a href="tel:0112064833" class="btn btn-primary" style="width:100%">今すぐ電話する</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">💬</div>
+        <h3>LINE公式アカウント</h3>
+        <p>LINEでお気軽にメッセージを。<br>24時間メッセージ受付中</p>
+        <div class="line-qr" aria-label="LINE QRコード（後ほど差し替え）">
+          <span class="qr-icon">📱</span>
+          <span>LINE QRコード<br>（ここに差し替え）</span>
+        </div>
+        <a href="#" class="btn btn-line" style="width:100%">LINEで友達追加</a>
+      </div>
+      <div class="contact-card">
+        <div class="icon">✉️</div>
+        <h3>メール</h3>
+        <p>24時間受付・2営業日以内に<br>ご返信いたします</p>
+        <p style="font-size:.82rem;opacity:.8;margin-bottom:16px;word-break:break-all;">
+          kksanyo.sansan@gmail.com
+        </p>
+        <a href="mailto:kksanyo.sansan@gmail.com" class="btn" style="background:rgba(255,255,255,.15);color:#fff;border:2px solid rgba(255,255,255,.4);width:100%">
+          メールを送る
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     PARTNER
+============================================= -->
+<section id="partner" class="section" aria-labelledby="partner-heading">
+  <div class="container">
+    <div class="partner-inner">
+      <div class="partner-img" aria-hidden="true">
+        <span class="icon">🌸</span>
+        <span>さんようこどもかん</span>
+      </div>
+      <div>
+        <div class="section-header">
+          <div class="partner-badge">
+            <span>🤝</span>
+            姉妹施設のご紹介
+          </div>
+          <h2 class="section-title" id="partner-heading">
+            <span>さんようこどもかん</span>
+          </h2>
+        </div>
+        <p class="partner-desc">
+          「さんようこどもかん」は、さんさんと同じ株式会社三陽が運営する24時間の認可外保育所です。<br><br>
+          お子さまの成長に関わるあらゆる場面で保護者の方をサポートすることを理念に掲げ、仕事や育児に忙しいご家族に寄り添った保育を提供しています。<br><br>
+          さんさんと連携することで、より一体的・継続的な支援が可能になります。「保育と発達支援をまとめて相談したい」とお考えの方は、ぜひ両施設を合わせてご検討ください。
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:24px">
+          <span class="tag">🕐 24時間対応</span>
+          <span class="tag">👶 0歳〜就学前</span>
+          <span class="tag">🤝 さんさんと連携</span>
+        </div>
+        <a href="https://sanyokodomokan.jp/" target="_blank" rel="noopener noreferrer" class="partner-link">
+          さんようこどもかんのサイトへ
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FAQ
+============================================= -->
+<section id="faq" class="section bg-white" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title" id="faq-heading">よくある質問</h2>
+      <p class="section-lead">
+        保護者の方からよくいただくご質問をまとめました。その他のご質問はお気軽にお問い合わせください。
+      </p>
+    </div>
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q-badge" aria-hidden="true">Q</span>
+          <span>どのようなお子さまが利用できますか？</span>
+          <span class="chevron" aria-hidden="true">▾</span>
+        </div>
+        <div class="faq-a">
+          発達に心配のあるお子さまや、保育園・幼稚園・学校での生活に困りごとを感じているお子さまが対象です。発達障害（自閉スペクトラム症、ADHD、学習障害など）の診断があるお子さまはもちろん、「グレーゾーン」と言われているお子さまも、療育手帳がなくてもご利用いただける場合があります。まずはお気軽にご相談ください。利用には市区町村が発行する「障害児通所受給者証」が必要です。
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q-badge" aria-hidden="true">Q</span>
+          <span>利用料金はどのくらいかかりますか？</span>
+          <span class="chevron" aria-hidden="true">▾</span>
+        </div>
+        <div class="faq-a">
+          児童発達支援・放課後等デイサービスの利用料金は、「障害児通所支援」として国が定めた基準があり、利用者負担は原則として利用料の1割です。世帯の収入に応じた月額上限額（0円・4,600円・37,200円のいずれか）が設けられているため、多くの方が比較的少ない負担でご利用いただけます。詳細は市区町村の窓口またはさんさんスタッフまでお問い合わせください。
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q-badge" aria-hidden="true">Q</span>
+          <span>送迎はありますか？</span>
+          <span class="chevron" aria-hidden="true">▾</span>
+        </div>
+        <div class="faq-a">
+          はい、送迎サービスを実施しています。ご自宅や学校・保育園など、状況に合わせてご相談ください。また、さんさんは24時間認可外保育所「さんようこどもかん」と同じ建物内にあるため、保育所からそのままさんさんへ移動することも可能です。送迎エリアや時間帯の詳細についてはお気軽にお問い合わせください。
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q-badge" aria-hidden="true">Q</span>
+          <span>見学や体験利用はできますか？</span>
+          <span class="chevron" aria-hidden="true">▾</span>
+        </div>
+        <div class="faq-a">
+          もちろんです。見学は随時受け付けており、費用は一切かかりません。実際の活動の様子をご覧いただいたり、スタッフに直接ご質問いただいたりすることができます。また、正式なご契約前に体験利用（無料）をご案内する場合もございますので、まずはお電話またはLINEでご連絡ください。「見学したい」とお伝えいただくだけで大丈夫です。
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q-badge" aria-hidden="true">Q</span>
+          <span>受給者証がまだないのですが、相談できますか？</span>
+          <span class="chevron" aria-hidden="true">▾</span>
+        </div>
+        <div class="faq-a">
+          もちろんご相談いただけます。「うちの子はサービスを使えるのかな？」「受給者証ってどうやって取るの？」といったご質問も大歓迎です。申請の手順や必要書類のご説明、相談先のご案内など、できる限りサポートいたします。焦らず一緒に考えていきましょう。
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q-badge" aria-hidden="true">Q</span>
+          <span>兄弟姉妹が通っている保育園・学校に訪問してもらえますか？</span>
+          <span class="chevron" aria-hidden="true">▾</span>
+        </div>
+        <div class="faq-a">
+          「保育所等訪問支援」というサービスで対応しています。お子さまが通っている保育園、幼稚園、小学校などに専門のスタッフが直接出向き、集団生活の中での困りごとをサポートします。保育士・教員と連携しながら、環境の調整や支援方法の共有を行います。訪問先の施設のご理解・ご協力が必要ですが、詳細はご相談ください。
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
+          <span class="q-badge" aria-hidden="true">Q</span>
+          <span>保育所等訪問支援は、さんさんを利用していなくても受けられますか？</span>
+          <span class="chevron" aria-hidden="true">▾</span>
+        </div>
+        <div class="faq-a">
+          はい、保育所等訪問支援は、さんさんの他のサービスをご利用いただいていなくても、単独でご利用いただけます。市区町村の受給者証が必要ですが、「現在通っている園や学校での困りごとを改善したい」というご要望のみでもお気軽にご相談ください。
+        </div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:48px">
+      <p style="margin-bottom:20px;color:var(--color-text-light)">その他のご質問はお気軽にどうぞ</p>
+      <a href="tel:0112064833" class="btn btn-primary btn-lg">
+        📞 011-206-4833 に電話する
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================================
+     FOOTER
+============================================= -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">🌟 さんさん</div>
+        <p style="margin-bottom:12px">
+          株式会社三陽が運営する<br>
+          児童発達支援・放課後等デイサービス<br>
+          保育所等訪問支援施設
+        </p>
+        <p>
+          📞 <a href="tel:0112064833" style="color:var(--color-primary-lt);font-weight:700">011-206-4833</a><br>
+          ✉️ <a href="mailto:kksanyo.sansan@gmail.com" style="color:rgba(255,255,255,.65);font-size:.82rem">kksanyo.sansan@gmail.com</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>サービス</h4>
+        <ul>
+          <li><a href="#services">児童発達支援</a></li>
+          <li><a href="#services">放課後等デイサービス</a></li>
+          <li><a href="#services">保育所等訪問支援</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>施設情報</h4>
+        <ul>
+          <li><a href="#about">さんさんについて</a></li>
+          <li><a href="#features">さんさんの特徴</a></li>
+          <li><a href="#facility">施設概要</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+          <li><a href="https://sanyokodomokan.jp/" target="_blank" rel="noopener noreferrer">姉妹施設：さんようこどもかん →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 さんさん / 株式会社三陽. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">プライバシーポリシー</a>
+        <a href="https://sanyokodomokan.jp/" target="_blank" rel="noopener noreferrer">さんようこどもかん</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- =============================================
+     FLOATING MOBILE CTA
+============================================= -->
+<div class="float-cta" aria-label="お問い合わせボタン（固定）">
+  <a href="tel:0112064833" class="btn btn-primary">📞 電話する</a>
+  <a href="#contact" class="btn btn-line">💬 LINEで相談</a>
+</div>
+
+
+<!-- =============================================
+     SCROLL TO TOP
+============================================= -->
+<button id="scroll-top" aria-label="ページトップへ戻る">▲</button>
+
+
+<!-- =============================================
+     JAVASCRIPT
+============================================= -->
+<script>
+  /* ---------- Header scroll ---------- */
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+  }, { passive: true });
+
+  /* ---------- Hamburger menu ---------- */
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  hamburger.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-label', isOpen ? 'メニューを閉じる' : 'メニューを開く');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-label', 'メニューを開く');
+      document.body.style.overflow = '';
+    });
+  });
+
+  /* ---------- FAQ accordion ---------- */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    const toggle = () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    };
+    btn.addEventListener('click', toggle);
+    btn.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+    });
+  });
+
+  /* ---------- Scroll to top ---------- */
+  const scrollBtn = document.getElementById('scroll-top');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+  /* ---------- Intersection Observer (fade-up) ---------- */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
