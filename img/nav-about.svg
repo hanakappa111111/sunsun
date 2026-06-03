@@ -1,16 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
-  <!-- Stem -->
-  <path d="M20 36 V20" stroke="#ec6d45" stroke-width="2.2" stroke-linecap="round"/>
-  <!-- Left leaf -->
-  <path d="M20 24 C20 24 13 20 11 13 C15 13 19 17 20 24 Z" fill="#80b045"/>
-  <!-- Right leaf -->
-  <path d="M20 28 C20 28 27 24 29 17 C25 16.5 21 21 20 28 Z" fill="#aac886"/>
-  <!-- Sprout tip / bud -->
-  <circle cx="20" cy="18" r="4" fill="#80b045"/>
-  <ellipse cx="20" cy="16" rx="2.5" ry="3" fill="#aac886"/>
-  <!-- Ground mound -->
-  <ellipse cx="20" cy="36" rx="9" ry="3" fill="#c8a87a" opacity=".35"/>
-  <!-- Soil dots -->
-  <circle cx="14" cy="36" r="1"   fill="#c8a87a" opacity=".4"/>
-  <circle cx="26" cy="36" r="1.2" fill="#c8a87a" opacity=".4"/>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#ec6d45" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M2 9a10 10 0 1 0 20 0" />
+  <path d="M12 19a10 10 0 0 1 10 -10" />
+  <path d="M2 9a10 10 0 0 1 10 10" />
+  <path d="M12 4a9.7 9.7 0 0 1 2.99 7.5" />
+  <path d="M9.01 11.5a9.7 9.7 0 0 1 2.99 -7.5" />
 </svg>

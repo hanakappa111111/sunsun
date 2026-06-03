@@ -256,17 +256,14 @@ ul { list-style: none; }
   gap: 12px;
   text-decoration: none;
 }
-.logo-icon-circle {
-  width: 48px; height: 48px;
-  background: var(--c-orange);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  color: #fff;
-  font-family: var(--f-display);
-  font-size: 1.3rem;
+.header-logo-img {
+  width: 52px; height: 52px;
+  object-fit: contain;
   flex-shrink: 0;
-  box-shadow: var(--sh-warm);
+  border-radius: 50%;
+  transition: transform .3s cubic-bezier(.34,1.56,.64,1);
 }
+.header-logo-area:hover .header-logo-img { transform: rotate(-8deg) scale(1.08); }
 .logo-text .name {
   font-family: var(--f-display);
   font-size: 1.3rem;
@@ -1046,22 +1043,16 @@ ul { list-style: none; }
   letter-spacing: .04em;
 }
 .contact-tel small { font-size: 1rem; }
-.line-qr-box {
-  width: 120px; height: 120px;
-  background: #fff;
+.line-qr-img {
+  display: block;
+  width: 130px; height: 130px;
+  object-fit: contain;
   border-radius: var(--r-sm);
   margin: 0 auto 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  font-size: .68rem;
-  font-weight: 700;
-  color: #888;
-  padding: 10px;
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.15);
 }
-.line-qr-box .qr-icon { font-size: 2.4rem; color: #06C755; }
 /* white ghost button for contact section */
 .btn-ghost-white {
   background: rgba(255,255,255,.15);
@@ -1258,12 +1249,13 @@ ul { list-style: none; }
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
-.footer-brand .f-logo .dot {
-  width: 10px; height: 10px;
-  background: var(--c-orange);
+.footer-brand .f-logo img {
+  width: 52px; height: 52px;
+  object-fit: contain;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 .footer-brand p { font-size: .82rem; line-height: 1.9; margin-bottom: 14px; }
 .footer-brand .f-contact a {
@@ -1420,7 +1412,7 @@ ul { list-style: none; }
   <!-- main header row -->
   <div class="header-inner">
     <a href="#" class="header-logo-area">
-      <div class="logo-icon-circle" aria-hidden="true">さ</div>
+      <img src="img/logo-header.png" alt="さんさん" class="header-logo-img" width="52" height="52">
       <div class="logo-text">
         <div class="name">さんさん</div>
         <div class="sub">株式会社三陽</div>
@@ -1910,10 +1902,7 @@ ul { list-style: none; }
           ▼ LINE QRコード画像をここに差し替えてください
             例: <img src="images/line-qr.png" alt="LINE QRコード" width="120" height="120" style="margin:0 auto 16px;border-radius:12px">
         -->
-        <div class="line-qr-box" aria-label="LINE QRコード（後ほど差し替えください）">
-          <span class="qr-icon">📱</span>
-          <span>LINE QRコード<br>（ここに差し替え）</span>
-        </div>
+        <img src="img/line-qr.jpg" alt="LINE公式アカウント QRコード" class="line-qr-img" width="130" height="130">
         <a href="#" class="btn btn-line" style="width:100%;justify-content:center">LINEで友だち追加</a>
       </div>
       <div class="contact-box fade-up">
@@ -2074,7 +2063,10 @@ ul { list-style: none; }
     <div class="wrap">
       <div class="footer-inner">
         <div class="footer-brand">
-          <div class="f-logo"><span class="dot" aria-hidden="true"></span> さんさん</div>
+          <div class="f-logo">
+            <img src="img/logo-mark.png" alt="さんさんロゴ" width="56" height="56" style="filter:brightness(1.05)">
+            さんさん
+          </div>
           <p>株式会社三陽が運営する児童発達支援・<br>放課後等デイサービス・保育所等訪問支援施設</p>
           <div class="f-contact">
             <p>📞 <a href="tel:0112064833">011-206-4833</a></p>

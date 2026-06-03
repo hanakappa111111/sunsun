@@ -1,18 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
-  <!-- Parent speech bubble (large, left) -->
-  <rect x="2" y="4" width="28" height="20" rx="8" fill="#e05a6d"/>
-  <path d="M8 24 L5 30 L14 24 Z" fill="#e05a6d"/>
-  <!-- Lines in parent bubble -->
-  <line x1="8"  y1="12" x2="24" y2="12" stroke="#fff" stroke-width="1.8" stroke-linecap="round" opacity=".7"/>
-  <line x1="8"  y1="17" x2="20" y2="17" stroke="#fff" stroke-width="1.8" stroke-linecap="round" opacity=".7"/>
 
-  <!-- Child speech bubble (smaller, right) -->
-  <rect x="20" y="22" width="26" height="18" rx="6" fill="#f07a8a"/>
-  <path d="M36 40 L33 46 L40 40 Z" fill="#f07a8a"/>
-  <!-- Lines in child bubble -->
-  <line x1="25" y1="30" x2="40" y2="30" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".7"/>
-  <line x1="25" y1="35" x2="36" y2="35" stroke="#fff" stroke-width="1.5" stroke-linecap="round" opacity=".7"/>
-
-  <!-- Heart between bubbles -->
-  <path d="M16 20 C16 20 14 17.5 14 16.2 C14 15 15 14.2 16 14.8 C16 14.8 16.2 15 16.5 15.4 C16.8 15 17 14.8 17 14.8 C18 14.2 19 15 19 16.2 C19 17.5 16.5 20 16.5 20 Z" fill="#fff" opacity=".9"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#c44460" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M8 9h8" />
+  <path d="M8 13h3.5" />
+  <path d="M10.48 19.512l-2.48 1.488v-3h-2a3 3 0 0 1 -3 -3v-8a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v4" />
+  <path d="M18 22l3.35 -3.284a2.143 2.143 0 0 0 .005 -3.071a2.242 2.242 0 0 0 -3.129 -.006l-.224 .22l-.223 -.22a2.242 2.242 0 0 0 -3.128 -.006a2.143 2.143 0 0 0 -.006 3.071l3.355 3.296" />
 </svg>
