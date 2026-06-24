@@ -861,6 +861,21 @@ ul { list-style: none; }
   color: var(--c-text-dk);
 }
 .info-card td a { color: var(--c-orange); text-decoration: underline; }
+.eval-group { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.btn-eval {
+  display: inline-block;
+  font-size: .78rem;
+  font-family: var(--f-primary);
+  color: var(--c-text-dk);
+  border: 1.5px solid #d4ccc6;
+  border-radius: 8px;
+  padding: 6px 14px;
+  background: #fff;
+  text-decoration: none;
+  line-height: 1.4;
+  transition: border-color .2s, background .2s;
+}
+.btn-eval:hover { border-color: var(--c-orange); background: #fff8f4; color: var(--c-orange); }
 .facility-ctas { display: flex; flex-direction: column; gap: 20px; }
 .cta-box {
   background: var(--c-white);
@@ -1717,7 +1732,7 @@ ul { list-style: none; }
           <span class="svc-tag t2">対象：小学生</span>
           <h3 class="svc-title">放課後等デイサービス</h3>
           <p class="svc-desc">
-            学校の授業終了後や長期休暇中に、障害のある就学児・生徒を対象として、生活能力の向上と社会性の育成を支援するサービスです。学校と家庭の中間にある「第三の居場所」として、お子さまがのびのびと過ごせる環境を提供します。<br><br>
+            学校の授業終了後や長期休暇中に、発達に特性のある就学児・生徒を対象として、生活能力の向上と社会性の育成を支援するサービスです。学校と家庭の中間にある「第三の居場所」として、お子さまがのびのびと過ごせる環境を提供します。<br><br>
             宿題サポートや余暇活動・社会生活スキルトレーニングを通じて、放課後の時間を充実させます。友だちとの関わりや集団生活を経験しながら、社会参加への力を少しずつ育てていきます。
           </p>
           <ul class="svc-list">
@@ -1783,6 +1798,24 @@ ul { list-style: none; }
           <tr><th scope="row">送迎</th><td>あり（詳細はお問い合わせください）</td></tr>
           <tr><th scope="row">電話</th><td><a href="tel:0112064833">011-206-4833</a></td></tr>
           <tr><th scope="row">メール</th><td><a href="mailto:kksanyo.sansan@gmail.com">kksanyo.sansan@gmail.com</a></td></tr>
+          <tr>
+            <th scope="row">児童発達支援</th>
+            <td>
+              <div class="eval-group">
+                <a href="#" class="btn-eval">事業者自己評価</a>
+                <a href="#" class="btn-eval">保護者様向けアンケート</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">放課後デイサービス</th>
+            <td>
+              <div class="eval-group">
+                <a href="#" class="btn-eval">事業者自己評価</a>
+                <a href="#" class="btn-eval">保護者様向けアンケート</a>
+              </div>
+            </td>
+          </tr>
         </table>
       </div>
       <div class="facility-ctas">
@@ -1839,11 +1872,11 @@ ul { list-style: none; }
       <div class="access-cards">
         <div class="access-card">
           <h3>📍 住所</h3>
-          <p>〒060-0006<br>北海道札幌市中央区南６条西８丁目８番１１号<br>サンドルフ札幌２階<br><small style="color:var(--c-gold-text)">※さんようこどもかんと同一建物</small></p>
+          <p>〒064-0806<br>北海道札幌市中央区南６条西８丁目８番１１号<br>サンドルフ・札幌２階<br><small style="color:var(--c-gold-text)">※さんようこどもかんと同一建物</small></p>
         </div>
         <div class="access-card">
           <h3>🚌 公共交通機関でお越しの方</h3>
-          <p>地下鉄南北線「中島公園駅」より徒歩約7分<br>市電「中央区役所前」停留所より徒歩約5分<br>バス停「南6条西8丁目」すぐそば</p>
+          <p>地下鉄南北線「中島公園駅」より徒歩約15分<br>市電「中央区役所前」停留所より徒歩約15分<br>バス停「南6条西8丁目」すぐそば</p>
         </div>
         <div class="access-card">
           <h3>🚗 お車でお越しの方</h3>
@@ -1948,7 +1981,7 @@ ul { list-style: none; }
       <div class="faq-item">
         <div class="faq-q" role="button" tabindex="0" aria-expanded="false">
           <span class="q-badge" aria-hidden="true">Q</span>
-          <span class="q-text">どのようなお子さまが利用できますか？</span>
+          <span class="q-text">どのような子どもが利用できますか？</span>
           <span class="q-chevron" aria-hidden="true">▾</span>
         </div>
         <div class="faq-a">
