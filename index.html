@@ -854,6 +854,16 @@ ul { list-style: none; }
   width: 110px;
   vertical-align: top;
 }
+.eval-row td {
+  padding: 12px 20px;
+}
+.eval-label {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--c-gold-text);
+  margin-bottom: 8px;
+}
 .info-card td {
   padding: 16px 20px;
   font-size: .9rem;
@@ -1798,18 +1808,18 @@ ul { list-style: none; }
           <tr><th scope="row">送迎</th><td>あり（詳細はお問い合わせください）</td></tr>
           <tr><th scope="row">電話</th><td><a href="tel:0112064833">011-206-4833</a></td></tr>
           <tr><th scope="row">メール</th><td><a href="mailto:kksanyo.sansan@gmail.com">kksanyo.sansan@gmail.com</a></td></tr>
-          <tr>
-            <th scope="row">児童発達支援</th>
-            <td>
+          <tr class="eval-row">
+            <td colspan="2">
+              <span class="eval-label">児童発達支援</span>
               <div class="eval-group">
                 <a href="#" class="btn-eval">事業者自己評価</a>
                 <a href="#" class="btn-eval">保護者様向けアンケート</a>
               </div>
             </td>
           </tr>
-          <tr>
-            <th scope="row">放課後デイサービス</th>
-            <td>
+          <tr class="eval-row">
+            <td colspan="2">
+              <span class="eval-label">放課後デイサービス</span>
               <div class="eval-group">
                 <a href="#" class="btn-eval">事業者自己評価</a>
                 <a href="#" class="btn-eval">保護者様向けアンケート</a>
@@ -1902,7 +1912,7 @@ ul { list-style: none; }
         <span class="jp" id="contact-title">まずはお気軽にご相談を</span>
         <span class="en">Contact</span>
       </div>
-      <p class="sec-lead">「うちの子は対象になる？」「どんな支援をするの？」など、些細なことでもご相談ください。</p>
+      <p class="sec-lead">「うちの子は対象になる？」「どんな支援をするの？」など、<br>些細なことでもご相談ください。</p>
     </div>
     <div class="contact-grid">
       <div class="contact-box fade-up">
